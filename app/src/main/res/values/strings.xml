@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GMU Menu</string>
+
+
+    <integer-array name="wingszone_image">
+        <item>@drawable/wingszone_wings1</item>
+        <item>@drawable/wingszone_tender2</item>
+        <item>@drawable/wingszone_fireshrimp3</item>
+    </integer-array>
+
+    <integer-array name="pandaexpress_image">
+        <item>@drawable/pandaexpress_organgechicken1</item>
+    </integer-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
