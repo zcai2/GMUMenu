@@ -15,14 +15,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+//import android.widget.ImageButton;
+import android.widget.Button;
+import android.widget.ImageButton;
 import 	android.widget.TextView;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
 public class MainMenu extends AppCompatActivity {
 
-    private Button button1;
-    private Button button2;
+    private ImageButton button1;
+    private ImageButton button2;
     private TextView test;
     private int ID;
     public static ArrayList<TypedArray> imagelist= new ArrayList<TypedArray>();
@@ -34,9 +38,11 @@ public class MainMenu extends AppCompatActivity {
             setContentView(R.layout.activity_main_menu);
             imagelist.add(getResources().obtainTypedArray(R.array.wingszone_image));
             imagelist.add(getResources().obtainTypedArray(R.array.pandaexpress_image));
+            //imagelist.add(getResources().obtainTypedArray(R.array.wingszone_image));
+            //imagelist.add(getResources().obtainTypedArray(R.array.pandaexpress_image));
             // 获取Button按钮
-            button1 = (Button) findViewById(R.id.button1);
-            button2 = (Button) findViewById(R.id.button2);
+            button1 = (ImageButton) findViewById(R.id.button1);
+            button2 = (ImageButton) findViewById(R.id.button2);
             // 添加Button事件，当点击此按钮，进行页面的跳转
             button1.setOnClickListener(listener1);
             button2.setOnClickListener(listener1);
