@@ -9,7 +9,29 @@
     </integer-array>
 
     <integer-array name="pandaexpress_image">
-        <item>@drawable/pandaexpress_organgechicken1</item>
+        <item>@drawable/pandaexpress_orangechicken1</item>
+        <item>@drawable/pandaexpress_fiveflavorshrimp2</item>
+        <item>@drawable/pandaexpress_stringbeanchickenbreast3</item>
+        <item>@drawable/pandaexpress_sweetfirechickenbreast4</item>
+        <item>@drawable/pandaexpress_kungpaochicken5</item>
+        <item>@drawable/pandaexpress_mushroomchicken6</item>
+        <item>@drawable/pandaexpress_blackpepperchicken7</item>
+        <item>@drawable/pandaexpress_grilledteriyakichicken8</item>
+        <item>@drawable/pandaexpress_broccolibeef9</item>
+        <item>@drawable/pandaexpress_shanghaiangussteak10</item>
+        <item>@drawable/pandaexpress_beijingbeef11</item>
+        <item>@drawable/pandaexpress_honeywalnutshrimp12</item>
+        <item>@drawable/pandaexpress_eggplanttofu13</item>
+        <item>@drawable/pandaexpress_chowmein14</item>
+        <item>@drawable/pandaexpress_friedrice15</item>
+        <item>@drawable/pandaexpress_mixedvegetables16</item>
+        <item>@drawable/pandaexpress_whitesteamedrice17</item>
+        <item>@drawable/pandaexpress_chickenpotsticker18</item>
+        <item>@drawable/pandaexpress_creamcheeserangoon19</item>
+        <item>@drawable/pandaexpress_chickeneggroll20</item>
+        <item>@drawable/pandaexpress_veggiespringroll21</item>
+        <item>@drawable/pandaexpress_crispyshrimp22</item>
+        <item>@drawable/pandaexpress_fortunecookies23</item>
     </integer-array>
     <string name="title_activity_maps">Map</string>
 </resources>
