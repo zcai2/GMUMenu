@@ -5,11 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.example.yuanyuangao.myapplication.MainMenu">
 
-
-
-    <!--<Button
+    <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,8 +17,9 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp" />
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp" />
 
     <Button
         android:id="@+id/button2"
@@ -31,30 +31,7 @@
         android:layout_marginEnd="28dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="28dp" />-->
-    
-    <ImageButton
-        android:id="@+id/button1"
-        android:layout_width="179dp"
-        android:layout_height="180dp"
-        android:layout_marginRight="195dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/wingzonelogo"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <ImageButton
-        android:id="@+id/button2"
-        android:layout_width="179dp"
-        android:layout_height="180dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pandaexpresslogo"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="25dp" />
 
 </android.support.constraint.ConstraintLayout>

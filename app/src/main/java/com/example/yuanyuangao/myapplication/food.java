@@ -28,7 +28,12 @@ public class food {
 
     public String toString()
     {
-        return "   "+this.name+"                       "+this.price+"                       "+this.calorie;
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format("%20s", this.name));
+        sb.append(String.format("%20s", this.price));
+        sb.append(String.format("%20s", this.calorie));
+        //return "   "+this.name+"  \t                     "+this.price+"                       "+this.calorie;
+    return sb.toString();
     }
 
 }

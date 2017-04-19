@@ -38,8 +38,6 @@ public class MainMenu extends AppCompatActivity {
             setContentView(R.layout.activity_main_menu);
             imagelist.add(getResources().obtainTypedArray(R.array.wingszone_image));
             imagelist.add(getResources().obtainTypedArray(R.array.pandaexpress_image));
-            //imagelist.add(getResources().obtainTypedArray(R.array.wingszone_image));
-            //imagelist.add(getResources().obtainTypedArray(R.array.pandaexpress_image));
             // 获取Button按钮
             button1 = (ImageButton) findViewById(R.id.button1);
             button2 = (ImageButton) findViewById(R.id.button2);

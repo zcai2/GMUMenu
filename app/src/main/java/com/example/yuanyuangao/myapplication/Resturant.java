@@ -25,7 +25,10 @@ public class Resturant extends AppCompatActivity {
     private Button mapbutton;
     private ArrayList<food> mData = null;
     private ImageView itemImage;
+    private ImageView mapImage;
+   // private ImageView itemImage2;
     private TypedArray images;
+    private TypedArray maplist;
     private int ID=0;
 
 
@@ -41,7 +44,11 @@ public class Resturant extends AppCompatActivity {
         name= (TextView) findViewById(R.id.name);
         hour= (TextView) findViewById(R.id.hour);
         itemImage = (ImageView)findViewById(R.id.imageView);
+        mapImage = (ImageView)findViewById(R.id.mapImage);
+        maplist =getResources().obtainTypedArray(R.array.map_image);
+        mapImage.setImageResource(maplist.getResourceId(ID, -1));
         images = MainMenu.imagelist.get(ID);
+     //   itemImage.setImageResource(images.getResourceId(s.getSelectedItemPosition(), -1));
        // food= (TextView) findViewById(R.id.food);
         name.setText(testcase.getname());
         hour.setText(testcase.gethour());
@@ -74,12 +81,12 @@ public class Resturant extends AppCompatActivity {
             }
         });
         button = (Button) findViewById(R.id.back);
-        mapbutton = (Button) findViewById(R.id.mapbutton);
+      //  mapbutton = (Button) findViewById(R.id.mapbutton);
 
 
         // 添加Button事件，当点击此按钮，进行页面的跳转
         button.setOnClickListener(listener);
-        mapbutton.setOnClickListener(listener1);
+    //    mapbutton.setOnClickListener(listener1);
 
     }
     public ArrayList<String> test()
