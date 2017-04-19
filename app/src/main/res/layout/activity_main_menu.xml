@@ -8,30 +8,29 @@
     android:background="@drawable/background"
     tools:context="com.example.yuanyuangao.myapplication.MainMenu">
 
-    <Button
+    <ImageButton
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wings Zone"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="41dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="25dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Panda Express"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginEnd="28dp"
+        android:layout_width="179dp"
+        android:layout_height="180dp"
+        android:layout_marginRight="198dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="28dp"
-        android:layout_marginTop="25dp" />
+        app:srcCompat="@drawable/wingzonelogo"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginEnd="198dp" />
 
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="179dp"
+        android:layout_height="180dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pandaexpresslogo"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginEnd="6dp" />
 </android.support.constraint.ConstraintLayout>

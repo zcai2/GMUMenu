@@ -33,5 +33,9 @@
         <item>@drawable/pandaexpress_crispyshrimp22</item>
         <item>@drawable/pandaexpress_fortunecookies23</item>
     </integer-array>
+    <integer-array name="map_image">
+        <item>@drawable/hub</item>
+        <item>@drawable/panda</item>
+    </integer-array>
     <string name="title_activity_maps">Map</string>
 </resources>

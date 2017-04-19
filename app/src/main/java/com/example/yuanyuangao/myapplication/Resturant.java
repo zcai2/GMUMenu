@@ -2,6 +2,7 @@ package com.example.yuanyuangao.myapplication;
 
 import android.content.Intent;
 import android.content.res.TypedArray;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -43,6 +44,8 @@ public class Resturant extends AppCompatActivity {
         final Rest testcase= dining.getinformation(ID);
         name= (TextView) findViewById(R.id.name);
         hour= (TextView) findViewById(R.id.hour);
+        name.setTypeface(null, Typeface.BOLD);
+        hour.setTypeface(null, Typeface.BOLD);
         itemImage = (ImageView)findViewById(R.id.imageView);
         mapImage = (ImageView)findViewById(R.id.mapImage);
         maplist =getResources().obtainTypedArray(R.array.map_image);
@@ -60,13 +63,11 @@ public class Resturant extends AppCompatActivity {
             mData.add(testcase.footlist.get(j));
         }
         final Spinner s = (Spinner)findViewById(R.id.spinner);
-       // s.setPrompt("Select your favorite Planet!");//获取下拉列表ID
 
-        //将数组添加到ArrayList中
         ArrayAdapter x = new ArrayAdapter(this,android.R.layout.simple_spinner_item,mData);
-        //创建和上面已建好的ArrayList相关联的ArrayAdapter，并且设置系统默认样式，第一个参数为上下文，第二参数为系统默认样式，第三个参数为ArrayList实例。
-        x.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);//设置下拉列表的拉下来的样式。
-        s.setAdapter(x);//将此数组解析器ArrayAdapter绑定在已创建好的下拉列表上。
+
+        x.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        s.setAdapter(x);
 
         s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -81,12 +82,9 @@ public class Resturant extends AppCompatActivity {
             }
         });
         button = (Button) findViewById(R.id.back);
-      //  mapbutton = (Button) findViewById(R.id.mapbutton);
 
-
-        // 添加Button事件，当点击此按钮，进行页面的跳转
         button.setOnClickListener(listener);
-    //    mapbutton.setOnClickListener(listener1);
+
 
     }
     public ArrayList<String> test()
@@ -123,27 +121,11 @@ public class Resturant extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-            // 创建Intent对象
+
             Intent intent = new Intent();
-            // 设置要跳转的页面
+
             intent.setClass(Resturant.this, MainMenu.class);
-            // 开始Activity
 
-            //test.setText("aa");
-            startActivity(intent);
-        }
-    };
-    private View.OnClickListener listener1 = new View.OnClickListener() {
-
-        @Override
-        public void onClick(View v) {
-            // 创建Intent对象
-            Intent intent = new Intent();
-            // 设置要跳转的页面
-            intent.setClass(Resturant.this, MapsActivity.class);
-            // 开始Activity
-
-            //test.setText("aa");
             startActivity(intent);
         }
     };
