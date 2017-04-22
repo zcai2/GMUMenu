@@ -7,6 +7,12 @@
         <item>@drawable/wingszone_tender2</item>
         <item>@drawable/wingszone_fireshrimp3</item>
     </integer-array>
+    <integer-array name="redhotblue_image">
+        <item>@drawable/redhotblue_1familymeal</item>
+    </integer-array>
+    <integer-array name="starbucks_image">
+        <item>@drawable/starbucks_1unicorn</item>
+    </integer-array>
 
     <integer-array name="pandaexpress_image">
         <item>@drawable/pandaexpress_orangechicken1</item>
@@ -36,6 +42,8 @@
     <integer-array name="map_image">
         <item>@drawable/hub</item>
         <item>@drawable/panda</item>
+        <item>@drawable/jc</item>
+        <item>@drawable/jc</item>
     </integer-array>
     <string name="title_activity_maps">Map</string>
 </resources>
