@@ -1,6 +1,7 @@
 package com.example.yuanyuangao.myapplication;
 
 import org.junit.Test;
+import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
@@ -11,7 +12,11 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+    public void textFileReader1_isCorrect() throws Exception {
+        ArrayList<String> myObj = new ArrayList<String>();
+        Resturant r = new Resturant();
+        myObj = r.test();
+        String temp = "wingzone*11am-12am*wings+10$+400,tender+5$+400,shrimp+15$+300";
+        assertEquals(myObj.get(0), temp);
     }
 }
